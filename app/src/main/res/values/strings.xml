@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">travelsAgency</string>
+    <string name="title">Travels Agency</string>
+    <string name="subtitle">Inicia sesión</string>
+    <string name="btnIniciar">LOGIN</string>
+    <string name="btnReg">SIGN UP</string>
+    <string name="edtxt_name_user">User</string>
+    <string name="edtxt_pwd">Password</string>
+    <string name="edtxt_email">Email</string>
+    <string name="edtxt_rfc">RFC</string>
+    <string name="edtxt_role">Role</string>
+    <string name="edtxt_tel">Telephone</string>
+    <string name="account">Already have an account?</string>
+    <string name="title_activity_user_home">UserHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_agency_home">AgencyHome</string>
+</resources>

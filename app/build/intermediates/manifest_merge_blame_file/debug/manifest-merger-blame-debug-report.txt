@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.travelsagency"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:5:5-45:19
+12        android:allowBackup="true"
+12-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\cesar\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Design.NoActionBar" >
+20-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:11:9-56
+21        <activity
+21-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.example.travelsagency.AgencyHome"
+22-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:13:13-39
+23            android:exported="false" />
+23-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:14:13-37
+24        <activity
+24-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.example.travelsagency.TravelerHome"
+25-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:16:13-41
+26            android:exported="false" />
+26-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:18:9-22:50
+28            android:name="com.example.travelsagency.UserHome"
+28-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:19:13-37
+29            android:exported="false"
+29-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:20:13-37
+30            android:label="@string/title_activity_user_home"
+30-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:21:13-61
+31            android:theme="@style/NoActionBar" />
+31-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:22:13-47
+32        <activity
+32-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:23:9-27:50
+33            android:name="com.example.travelsagency.agencyViews.AgencyHome"
+33-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:24:13-51
+34            android:exported="false"
+34-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:25:13-37
+35            android:label="@string/title_activity_agency_home"
+35-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:26:13-63
+36            android:theme="@style/NoActionBar" />
+36-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:27:13-47
+37        <activity
+37-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:28:9-32:50
+38            android:name="com.example.travelsagency.userViews.UserHome"
+38-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:29:13-47
+39            android:exported="false"
+39-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:30:13-37
+40            android:label="@string/title_activity_user_home"
+40-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:31:13-61
+41            android:theme="@style/NoActionBar" />
+41-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:32:13-47
+42        <activity
+42-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:33:9-35:40
+43            android:name="com.example.travelsagency.SignUp"
+43-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:34:13-35
+44            android:exported="false" />
+44-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:35:13-37
+45        <activity
+45-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:36:9-44:20
+46            android:name="com.example.travelsagency.MainActivity"
+46-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:37:13-41
+47            android:exported="true" >
+47-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:38:13-36
+48            <intent-filter>
+48-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:39:13-43:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:40:17-69
+49-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:40:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:42:17-77
+51-->C:\Users\cesar\Documents\01_IA\travelsAgencyAndroidJava\app\src\main\AndroidManifest.xml:42:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+57            android:authorities="com.example.travelsagency.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\db233f3ba8947fb0f91cd701b83dfe6a\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\cesar\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\cesar\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\cesar\.gradle\caches\transforms-3\45759b04922bc547a81513b82a38ba1e\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+65        </provider>
+66
+67        <uses-library
+67-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+68            android:name="androidx.window.extensions"
+68-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+69            android:required="false" />
+69-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+70        <uses-library
+70-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+71            android:name="androidx.window.sidecar"
+71-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+72            android:required="false" />
+72-->[androidx.window:window:1.0.0] C:\Users\cesar\.gradle\caches\transforms-3\f65b5ca91da7c8c2dd021bd66811129e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+73    </application>
+74
+75</manifest>
