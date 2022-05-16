@@ -3186,9 +3186,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_agency_home
+layout activity_create_travel
 layout activity_main
 layout activity_sign_up
 layout activity_traveler_home
+layout activity_view_list_travels_agency
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

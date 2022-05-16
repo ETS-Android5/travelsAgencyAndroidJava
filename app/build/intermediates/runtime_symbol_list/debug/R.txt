@@ -3185,9 +3185,11 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_agency_home 0x7f0b001c
+int layout activity_create_travel 0x7f0b0077
 int layout activity_main 0x7f0b001d
 int layout activity_sign_up 0x7f0b001e
 int layout activity_traveler_home 0x7f0b001f
+int layout activity_view_list_travels_agency 0x7f0b0078
 int layout custom_dialog 0x7f0b0020
 int layout design_bottom_navigation_item 0x7f0b0021
 int layout design_bottom_sheet_dialog 0x7f0b0022

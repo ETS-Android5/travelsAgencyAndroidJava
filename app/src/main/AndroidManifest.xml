@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".activity_view_list_travels_agency"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTravel"
+            android:exported="false" />
+        <activity
             android:name=".AgencyHome"
             android:exported="false" />
         <activity

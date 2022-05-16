@@ -49,9 +49,11 @@ id radio_agencia
 id radio_viajero
 id roles
 layout activity_agency_home
+layout activity_create_travel
 layout activity_main
 layout activity_sign_up
 layout activity_traveler_home
+layout activity_view_list_travels_agency
 menu activity_agency_home_drawer
 menu activity_main_drawer
 menu activity_user_home_drawer
