@@ -23,9 +23,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final Button btnLogin;
-
-  @NonNull
   public final Button btnReg;
 
   @NonNull
@@ -52,13 +49,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   public final RadioGroup roles;
 
-  private ActivitySignUpBinding(@NonNull ScrollView rootView, @NonNull Button btnLogin,
-      @NonNull Button btnReg, @NonNull EditText edtxtEmail, @NonNull EditText edtxtPwd,
-      @NonNull EditText edtxtRfc, @NonNull EditText edtxtTelephone, @NonNull EditText edtxtUsuario,
+  private ActivitySignUpBinding(@NonNull ScrollView rootView, @NonNull Button btnReg,
+      @NonNull EditText edtxtEmail, @NonNull EditText edtxtPwd, @NonNull EditText edtxtRfc,
+      @NonNull EditText edtxtTelephone, @NonNull EditText edtxtUsuario,
       @NonNull RadioButton radioAgencia, @NonNull RadioButton radioViajero,
       @NonNull RadioGroup roles) {
     this.rootView = rootView;
-    this.btnLogin = btnLogin;
     this.btnReg = btnReg;
     this.edtxtEmail = edtxtEmail;
     this.edtxtPwd = edtxtPwd;
@@ -97,12 +93,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnLogin;
-      Button btnLogin = ViewBindings.findChildViewById(rootView, id);
-      if (btnLogin == null) {
-        break missingId;
-      }
-
       id = R.id.btnReg;
       Button btnReg = ViewBindings.findChildViewById(rootView, id);
       if (btnReg == null) {
@@ -157,8 +147,8 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ScrollView) rootView, btnLogin, btnReg, edtxtEmail,
-          edtxtPwd, edtxtRfc, edtxtTelephone, edtxtUsuario, radioAgencia, radioViajero, roles);
+      return new ActivitySignUpBinding((ScrollView) rootView, btnReg, edtxtEmail, edtxtPwd,
+          edtxtRfc, edtxtTelephone, edtxtUsuario, radioAgencia, radioViajero, roles);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

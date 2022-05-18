@@ -20,6 +20,7 @@
     <string name="account">Already have an account?</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">travelsAgency</string>
+    <string name="btnCreateAccount">CREATE ACCOUNT</string>
     <string name="btnIniciar">LOGIN</string>
     <string name="btnReg">SIGN UP</string>
     <string name="edtxt_email">Email</string>
@@ -39,6 +40,7 @@
     <string name="subtitle">Inicia sesión</string>
     <string name="title">Travels Agency</string>
     <string name="title_activity_agency_home">AgencyHome</string>
+    <string name="title_activity_main2">MainActivity2</string>
     <string name="title_activity_user_home">UserHome</string>
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="NoActionBar">

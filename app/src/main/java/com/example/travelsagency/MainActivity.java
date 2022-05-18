@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Gallery;
 import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
     Button btnlogin, btn_sign_up;
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 /*Creamos un objeto de la clase DBHelper e
         instanciamos el constructor y damos el nonbre de
          la base de datos y la version*/
-                DatabaseHelper admin = new DatabaseHelper(MainActivity.this, "users", null, 1 );
+                DatabaseHelper admin = new DatabaseHelper(MainActivity.this, "TravelsAgency.db", null, 1 );
                 /*Abrimos la base de datos como escritura*/
                 SQLiteDatabase db= admin.getWritableDatabase();
         /*Creamos dos variables string y capturamos los datos

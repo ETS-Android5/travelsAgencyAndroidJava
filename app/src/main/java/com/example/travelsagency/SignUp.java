@@ -8,17 +8,18 @@ import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.travelsagency.utilities.UserUtilities;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 
 public class SignUp extends AppCompatActivity{
@@ -36,24 +37,30 @@ public class SignUp extends AppCompatActivity{
         email = findViewById(R.id.edtxt_email);
         password = findViewById(R.id.edtxt_pwd);
         rfc = findViewById(R.id.edtxt_rfc);
-        btn_sign_in = findViewById(R.id.btnLogin);
+        //btn_sign_in = findViewById(R.id.btnLogin);
         btn_sign_up = findViewById(R.id.btnReg);
-        btn_sign_in.setOnClickListener(new View.OnClickListener() {
+        /*btn_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SignUp.this, MainActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
         btn_sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseHelper user = new DatabaseHelper(SignUp.this, "users", null, 1 );
+                DatabaseHelper user = new DatabaseHelper(SignUp.this, "TravelsAgency.db", null, 1 );
                 //long id = getTaskCount();
                 Random rand = new Random(); //instance of random class
                 int upperbound = 1000;
                 //generate random values from 0-24
                 int int_random = rand.nextInt(upperbound);
+
+                Date date = Calendar.getInstance().getTime();
+                DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+                String strDate = dateFormat.format(date);
+
+                Toast.makeText(SignUp.this, ""+strDate, Toast.LENGTH_SHORT).show();
                 SQLiteDatabase db = user.getWritableDatabase();
                 String user_name = name.getText().toString();
                 String user_tel = telephone.getText().toString();
@@ -75,13 +82,18 @@ public class SignUp extends AppCompatActivity{
                     register.put(UserUtilities.EMAIL_FIELD, user_email);
                     register.put(UserUtilities.TELEPHONE_FIELD, user_tel);
                     register.put(UserUtilities.PASSWORD_FIELD, user_pass);
-
+                    register.put(UserUtilities.CREATED_AT, strDate);
                     db.insert("USERS", null, register);
                     db.close();
                     //clean_data();
                     //Intent intent = new Intent(SignUp.this, UserHome.class);
                     //startActivity(intent);
                     Toast.makeText(SignUp.this, "Se agregó a " + user_name + " exitosamente", Toast.LENGTH_LONG).show();
+                    if(radio_role.getText().toString().equals("Viajero")){
+                        startActivity(new Intent(SignUp.this, TravelerHome.class));
+                    }else if (radio_role.getText().toString().equals("Agencia")){
+                        startActivity(new Intent(SignUp.this, AgencyHome.class));
+                    }
                 }else{
                     Toast.makeText(SignUp.this,"Debes llenar todos los campos", Toast.LENGTH_SHORT).show();
                     db.close();
@@ -90,7 +102,6 @@ public class SignUp extends AppCompatActivity{
                 radio_role = (RadioButton) findViewById(selectedId);
 
                 Toast.makeText(SignUp.this, radio_role.getText(), Toast.LENGTH_SHORT).show();
-
             }
         });
     }
@@ -100,9 +111,9 @@ public class SignUp extends AppCompatActivity{
     }
 
     public long getTaskCount() {
-        DatabaseHelper user = new DatabaseHelper(this, "db_users", null, 1 );
+        DatabaseHelper user = new DatabaseHelper(this, "TravelsAgency.db", null, 1 );
         SQLiteDatabase db = user.getWritableDatabase();
-        return DatabaseUtils.queryNumEntries(db, "db_users", "id");
+        return DatabaseUtils.queryNumEntries(db, "USERS", "id");
     }
 
     public void sign_in_view(View view){

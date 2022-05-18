@@ -26,20 +26,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title"
+            android:text="@string/btnReg"
             android:textAlignment="center"
             android:textSize="45sp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="0dp"/>
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/subtitle"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="5dp"/>-->
         <EditText
             android:id="@+id/edtxt_usuario"
             android:layout_width="match_parent"
@@ -169,18 +169,18 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/edit_button"
-            android:text="@string/btnReg"
+            android:text="@string/btnCreateAccount"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/account"
             android:textAlignment="center"
             android:textSize="15sp"
-            android:layout_marginTop="20dp"/>
-        <Button
+            android:layout_marginTop="20dp"/>-->
+        <!--<Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,7 +192,7 @@
             android:text="@string/btnIniciar"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold" />-->
     </LinearLayout>
 
 </ScrollView>

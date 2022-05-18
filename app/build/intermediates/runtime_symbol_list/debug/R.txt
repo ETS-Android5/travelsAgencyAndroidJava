@@ -2870,6 +2870,7 @@ int id mini 0x7f080113
 int id mobile_navigation 0x7f080114
 int id mobile_navigation2 0x7f080115
 int id mobile_navigation3 0x7f080116
+int id mobile_navigation4 0x7f0801ff
 int id month_grid 0x7f080117
 int id month_navigation_bar 0x7f080118
 int id month_navigation_fragment_toggle 0x7f080119
@@ -3283,12 +3284,14 @@ int menu activity_user_home_drawer 0x7f0c0002
 int menu agency_home 0x7f0c0003
 int menu example_menu 0x7f0c0004
 int menu example_menu2 0x7f0c0005
+int menu main_activity2 0x7f0c0007
 int menu user_home 0x7f0c0006
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation mobile_navigation 0x7f0e0000
 int navigation mobile_navigation2 0x7f0e0001
 int navigation mobile_navigation3 0x7f0e0002
+int navigation mobile_navigation4 0x7f0e0003
 int plurals mtrl_badge_content_description 0x7f0f0000
 int raw main_green 0x7f100000
 int string abc_action_bar_home_description 0x7f110000
@@ -3325,6 +3328,7 @@ int string app_name 0x7f11001e
 int string appbar_scrolling_view_behavior 0x7f11001f
 int string bottom_sheet_behavior 0x7f110020
 int string bottomsheet_action_expand_halfway 0x7f110021
+int string btnCreateAccount 0x7f11009c
 int string btnIniciar 0x7f110022
 int string btnReg 0x7f110023
 int string character_counter_content_description 0x7f110024
@@ -3446,6 +3450,7 @@ int string status_bar_notification_info_overflow 0x7f110097
 int string subtitle 0x7f110098
 int string title 0x7f110099
 int string title_activity_agency_home 0x7f11009a
+int string title_activity_main2 0x7f11009d
 int string title_activity_user_home 0x7f11009b
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
