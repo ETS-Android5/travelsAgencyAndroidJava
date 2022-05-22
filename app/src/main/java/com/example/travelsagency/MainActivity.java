@@ -66,9 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         }else if(usuario.equals(usua)&&contrasena.equals(pass)&&role.equals("Agencia")){
                             //si son iguales entonces vamos a otra ventana
                             //Menu es una nueva actividad empty
-                            Intent ven=new Intent(MainActivity.this, AgencyHome.class);
-                            //lanzamos la actividad
-                            startActivity(ven);
+                            startActivity(new Intent(MainActivity.this, ViewListTravelsAgency.class));
                             //Toast.makeText(MainActivity.this, "email: "+ usua + " pass: " + pass + "role: " + role, Toast.LENGTH_SHORT).show();
                             //limpiamos las las cajas de texto
                             txtuser.setText("");

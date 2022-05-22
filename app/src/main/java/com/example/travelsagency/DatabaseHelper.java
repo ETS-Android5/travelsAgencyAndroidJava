@@ -46,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             "CREATE TABLE if not exists TRAVELS (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
                     "name TEXT, description TEXT, destination TEXT, location_exit TEXT, location_arrive TEXT, " +
-                    "start_travel TEXT, hour_exit timestamp, end_travel TEXT, quantity INTEGER, rating REAL, " +
+                    "start_travel TEXT, hour_exit TEXT, end_travel TEXT, quantity INTEGER, rating REAL, " +
                     "price REAL, agency_id_fk INTEGER, vehicle_id_fk INTEGER, " +
                     "FOREIGN KEY (agency_id_fk) REFERENCES AGENCIES (id), " +
                     "FOREIGN KEY (vehicle_id_fk) REFERENCES VEHICLES (id));";

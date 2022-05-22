@@ -25,4 +25,19 @@
     <string name="title_activity_agency_home">AgencyHome</string>
     <string name="btnCreateAccount">CREATE ACCOUNT</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_list_travels">Travels List</string>
+    <string name="titleBack">BACK</string>
+    <string name="btnAdd">+</string>
+    <string name="titleNewTravel">New Travel</string>
+    <string name="edtxt_name_travel">Name</string>
+    <string name="edtxt_description_travel">Description</string>
+    <string name="edtxt_destination_travel">Destination</string>
+    <string name="edtxt_location_exit_travel">Location exit</string>
+    <string name="edtxt_location_arrive_travel">Location arrive</string>
+    <string name="edtxt_start_travel">Date Start Travel</string>
+    <string name="edtxt_hour_exit_travel">Hour exit</string>
+    <string name="edtxt_end_travel">Date End travel</string>
+    <string name="edtxt_quantity_travel">Seats Quantity</string>
+    <string name="edtxt_price_travel">Price</string>
+    <string name="btnCreateTravel">CREATE TRAVEL</string>
 </resources>

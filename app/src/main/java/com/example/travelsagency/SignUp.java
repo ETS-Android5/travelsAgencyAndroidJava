@@ -59,8 +59,6 @@ public class SignUp extends AppCompatActivity{
                 Date date = Calendar.getInstance().getTime();
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
                 String strDate = dateFormat.format(date);
-
-                Toast.makeText(SignUp.this, ""+strDate, Toast.LENGTH_SHORT).show();
                 SQLiteDatabase db = user.getWritableDatabase();
                 String user_name = name.getText().toString();
                 String user_tel = telephone.getText().toString();
@@ -92,7 +90,7 @@ public class SignUp extends AppCompatActivity{
                     if(radio_role.getText().toString().equals("Viajero")){
                         startActivity(new Intent(SignUp.this, TravelerHome.class));
                     }else if (radio_role.getText().toString().equals("Agencia")){
-                        startActivity(new Intent(SignUp.this, AgencyHome.class));
+                        startActivity(new Intent(SignUp.this, ViewListTravelsAgency.class));
                     }
                 }else{
                     Toast.makeText(SignUp.this,"Debes llenar todos los campos", Toast.LENGTH_SHORT).show();

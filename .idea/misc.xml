@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_agency_home.xml" value="0.3569230769230769" />
-        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_create_travel.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_create_travel.xml" value="0.33055555555555555" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_main.xml" value="0.34444444444444444" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_main2.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_sign_up.xml" value="0.2734375" />
@@ -15,6 +15,12 @@
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/fragment_home.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/fragment_slideshow.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/nav_header_main.xml" value="0.3569230769230769" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/activity_agency_home_drawer.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/activity_main_drawer.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/activity_user_home_drawer.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/agency_home.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/main_activity2.xml" value="0.2734375" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/menu/user_home.xml" value="0.2734375" />
       </map>
     </option>
   </component>

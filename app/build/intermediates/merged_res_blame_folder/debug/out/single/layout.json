@@ -1,82 +1,30 @@
 [
     {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/fragment_home.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/fragment_home.xml"
+        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_traveler_home.xml",
+        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_traveler_home.xml"
     },
     {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_agency_home.xml",
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_agency_home.xml"
     },
     {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/nav_header_main.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\fragment_slideshow.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\fragment_slideshow.xml"
-    },
-    {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/fragment_slideshow.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/fragment_slideshow.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/fragment_gallery.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/fragment_gallery.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_traveler_home.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_traveler_home.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\content_main.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\nav_header_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_create_travel.xml",
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_create_travel.xml"
-    },
-    {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/app_bar_main.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/app_bar_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\fragment_gallery.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\fragment_gallery.xml"
     },
     {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_sign_up.xml",
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_sign_up.xml"
     },
     {
+        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_view_list_travels_agency.xml",
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_view_list_travels_agency.xml"
     },
     {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/content_main.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\app_bar_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-mergeDebugResources-37:\\layout\\activity_main2.xml",
-        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_main2.xml"
-    },
-    {
-        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/activity_main2.xml",
-        "source": "com.example.travelsagency.app-main-40:/layout/activity_main2.xml"
+        "merged": "com.example.travelsagency.app-mergeDebugResources-37:/layout/activity_create_travel.xml",
+        "source": "com.example.travelsagency.app-main-40:/layout/activity_create_travel.xml"
     }
 ]
