@@ -70,6 +70,7 @@ int animator nav_default_enter_anim 0x7f020020
 int animator nav_default_exit_anim 0x7f020021
 int animator nav_default_pop_enter_anim 0x7f020022
 int animator nav_default_pop_exit_anim 0x7f020023
+int array edos_rep_mex 0x7f140000
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr action 0x7f030002
@@ -3070,6 +3071,7 @@ int id textinput_suffix_text 0x7f0801da
 int id time 0x7f0801db
 int id title 0x7f0801dc
 int id titleDividerNoCustom 0x7f0801dd
+int id title_list_travels 0x7f080201
 int id title_template 0x7f0801de
 int id toggle 0x7f0801df
 int id top 0x7f0801e0

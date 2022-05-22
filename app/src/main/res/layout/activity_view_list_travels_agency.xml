@@ -8,6 +8,7 @@
     tools:context=".ViewListTravelsAgency">
 
     <TextView
+        android:id="@+id/title_list_travels"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_list_travels"

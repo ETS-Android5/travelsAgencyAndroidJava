@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -27,7 +28,7 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
   public final EditText edtxtDescriptionTravel;
 
   @NonNull
-  public final EditText edtxtDestinationTravel;
+  public final Spinner edtxtDestinationTravel;
 
   @NonNull
   public final EditText edtxtEndTravel;
@@ -55,7 +56,7 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
 
   private ActivityCreateTravelBinding(@NonNull LinearLayout rootView,
       @NonNull Button btnCreateTravel, @NonNull EditText edtxtDescriptionTravel,
-      @NonNull EditText edtxtDestinationTravel, @NonNull EditText edtxtEndTravel,
+      @NonNull Spinner edtxtDestinationTravel, @NonNull EditText edtxtEndTravel,
       @NonNull EditText edtxtHourExitTravel, @NonNull EditText edtxtLocationArriveTravel,
       @NonNull EditText edtxtLocationExitTravel, @NonNull EditText edtxtNameTravel,
       @NonNull EditText edtxtPriceTravel, @NonNull EditText edtxtQuantityTravel,
@@ -114,7 +115,7 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
       }
 
       id = R.id.edtxt_destination_travel;
-      EditText edtxtDestinationTravel = ViewBindings.findChildViewById(rootView, id);
+      Spinner edtxtDestinationTravel = ViewBindings.findChildViewById(rootView, id);
       if (edtxtDestinationTravel == null) {
         break missingId;
       }

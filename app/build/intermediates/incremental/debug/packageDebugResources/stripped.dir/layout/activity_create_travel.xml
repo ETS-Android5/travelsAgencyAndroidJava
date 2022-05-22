@@ -79,14 +79,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <EditText
+            <Spinner
                 android:id="@+id/edtxt_destination_travel"
                 android:layout_width="165dp"
                 android:layout_height="45dp"
                 android:hint="@string/edtxt_destination_travel"
                 android:textColorHint="@color/white"
                 android:background="@drawable/edit_text_states"
-                android:inputType="text"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="20sp"

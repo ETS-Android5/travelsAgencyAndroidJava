@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -26,11 +27,16 @@ public final class ActivityViewListTravelsAgencyBinding implements ViewBinding {
   @NonNull
   public final ListView listCursos;
 
+  @NonNull
+  public final TextView titleListTravels;
+
   private ActivityViewListTravelsAgencyBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnAddTravel, @NonNull ListView listCursos) {
+      @NonNull Button btnAddTravel, @NonNull ListView listCursos,
+      @NonNull TextView titleListTravels) {
     this.rootView = rootView;
     this.btnAddTravel = btnAddTravel;
     this.listCursos = listCursos;
+    this.titleListTravels = titleListTravels;
   }
 
   @Override
@@ -72,8 +78,14 @@ public final class ActivityViewListTravelsAgencyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.title_list_travels;
+      TextView titleListTravels = ViewBindings.findChildViewById(rootView, id);
+      if (titleListTravels == null) {
+        break missingId;
+      }
+
       return new ActivityViewListTravelsAgencyBinding((LinearLayout) rootView, btnAddTravel,
-          listCursos);
+          listCursos, titleListTravels);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2,7 +2,9 @@ package com.example.travelsagency;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -66,6 +68,21 @@ public class MainActivity extends AppCompatActivity {
                         }else if(usuario.equals(usua)&&contrasena.equals(pass)&&role.equals("Agencia")){
                             //si son iguales entonces vamos a otra ventana
                             //Menu es una nueva actividad empty
+
+                            /*
+                            SharedPreferences preferences = getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
+                            String usua = usuario.getText().toString();
+                            String pas = password.getText().toString();
+                            SharedPreferences.Editor editor = preferences.edit();
+                            editor.putString("user",usua);
+                            editor.putString("pwd",pas);
+                            editor.commit();
+                            Intent intent = new Intent(this,Preferences.class);
+                            intent.putExtra("user",usua);
+                            intent.putExtra("pwd",pas);
+                            startActivity(intent);
+                            */
+
                             startActivity(new Intent(MainActivity.this, ViewListTravelsAgency.class));
                             //Toast.makeText(MainActivity.this, "email: "+ usua + " pass: " + pass + "role: " + role, Toast.LENGTH_SHORT).show();
                             //limpiamos las las cajas de texto

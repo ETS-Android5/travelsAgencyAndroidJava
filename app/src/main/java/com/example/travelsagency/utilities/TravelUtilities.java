@@ -12,4 +12,5 @@ public class TravelUtilities {
     public static final String END_TRAVEL = "end_travel";
     public static final String QUANTITY = "quantity";
     public static final String PRICE = "price";
+    public static final String AGENCY_ID = "agency_id_fk";
 }

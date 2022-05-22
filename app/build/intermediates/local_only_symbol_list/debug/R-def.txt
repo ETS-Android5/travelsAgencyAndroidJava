@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array edos_rep_mex
 color black
 color dark_orange
 color gray_soft
@@ -55,6 +56,7 @@ id listCursos
 id radio_agencia
 id radio_viajero
 id roles
+id title_list_travels
 layout activity_agency_home
 layout activity_create_travel
 layout activity_main
