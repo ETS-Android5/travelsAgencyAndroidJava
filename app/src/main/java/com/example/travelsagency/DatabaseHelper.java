@@ -43,7 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     "name TEXT, model TEXT, year_vehicle TEXT, seat_quantity INTEGER, plate TEXT);";
 
     private static final String CREATE_TABLE_TRAVELS =
-            "CREATE TABLE if not exists TRAVELS (" +
+            "CREATE TABLE if not exists db (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
                     "name TEXT, description TEXT, destination TEXT, location_exit TEXT, location_arrive TEXT, " +
                     "start_travel TEXT, hour_exit TEXT, end_travel TEXT, quantity INTEGER, rating REAL, " +

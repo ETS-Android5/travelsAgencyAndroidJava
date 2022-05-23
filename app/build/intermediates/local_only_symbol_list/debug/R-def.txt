@@ -34,6 +34,7 @@ drawable logomorado
 drawable logonaranja
 drawable side_nav_bar
 id btnAddTravel
+id btnBackCreateTravel
 id btnCreateTravel
 id btnLogin
 id btnReg
@@ -52,7 +53,7 @@ id edtxt_rfc
 id edtxt_start_travel
 id edtxt_telephone
 id edtxt_usuario
-id listCursos
+id listTravels
 id radio_agencia
 id radio_viajero
 id roles
@@ -70,6 +71,7 @@ string account
 string action_settings
 string app_name
 string btnAdd
+string btnBackCreateTravel
 string btnCreateAccount
 string btnCreateTravel
 string btnIniciar

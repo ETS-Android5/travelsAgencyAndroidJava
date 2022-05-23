@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         /*inicializamos al cursor y llamamos al objeto de la base
         de datos para realizar un sentencia query where donde
          pasamos las dos variables nombre de usuario y password*/
-                fila=db.rawQuery("select email, password, role from USERS where email='"+
-                        usuario+"' and password='"+contrasena+"'",null);
+                fila=db.rawQuery("select u.email, u.password, u.role, u.id, a.id from USERS as u, AGENCIES as a where email='"+
+                        usuario+"' and password='"+contrasena+"' and u.id = a.user_id_fk",null);
                 /*Realizamos un try catch para captura de errores*/
                 try {
                     /*Condicional if preguntamos si cursor tiene algun dato*/
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         String usua=fila.getString(0);
                         String pass=fila.getString(1);
                         String role = fila.getString(2);
+                        String id = fila.getString(4);
                         //preguntamos si los datos ingresados son iguales
                         if (usuario.equals(usua)&&contrasena.equals(pass)&&role.equals("Viajero")){
                             //si son iguales entonces vamos a otra ventana
@@ -66,24 +67,16 @@ public class MainActivity extends AppCompatActivity {
                             txtuser.setText("");
                             txtpassword.setText("");
                         }else if(usuario.equals(usua)&&contrasena.equals(pass)&&role.equals("Agencia")){
-                            //si son iguales entonces vamos a otra ventana
-                            //Menu es una nueva actividad empty
 
-                            /*
-                            SharedPreferences preferences = getSharedPreferences("Credenciales", Context.MODE_PRIVATE);
-                            String usua = usuario.getText().toString();
-                            String pas = password.getText().toString();
+                            SharedPreferences preferences = getSharedPreferences("ID AGENCIE", Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = preferences.edit();
-                            editor.putString("user",usua);
-                            editor.putString("pwd",pas);
+                            editor.putString("id_agencie",id);
                             editor.commit();
-                            Intent intent = new Intent(this,Preferences.class);
-                            intent.putExtra("user",usua);
-                            intent.putExtra("pwd",pas);
+                            Intent intent = new Intent(MainActivity.this, ViewListTravelsAgency.class);
+                            intent.putExtra("id_agencie",id);
+                            Toast.makeText(MainActivity.this, "Hemos enviado "+id, Toast.LENGTH_SHORT).show();
                             startActivity(intent);
-                            */
-
-                            startActivity(new Intent(MainActivity.this, ViewListTravelsAgency.class));
+                            
                             //Toast.makeText(MainActivity.this, "email: "+ usua + " pass: " + pass + "role: " + role, Toast.LENGTH_SHORT).show();
                             //limpiamos las las cajas de texto
                             txtuser.setText("");

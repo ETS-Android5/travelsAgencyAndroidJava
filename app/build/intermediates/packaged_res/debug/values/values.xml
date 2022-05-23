@@ -57,6 +57,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">travelsAgency</string>
     <string name="btnAdd">+</string>
+    <string name="btnBackCreateTravel">BACK</string>
     <string name="btnCreateAccount">CREATE ACCOUNT</string>
     <string name="btnCreateTravel">CREATE TRAVEL</string>
     <string name="btnIniciar">LOGIN</string>

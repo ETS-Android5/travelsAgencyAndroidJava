@@ -2694,6 +2694,7 @@ int id bounceBoth 0x7f080061
 int id bounceEnd 0x7f080062
 int id bounceStart 0x7f080063
 int id btnAddTravel 0x7f080064
+int id btnBackCreateTravel 0x7f080203
 int id btnCreateTravel 0x7f080065
 int id btnLogin 0x7f080066
 int id btnReg 0x7f080067
@@ -2850,8 +2851,8 @@ int id legacy 0x7f0800fd
 int id line1 0x7f0800fe
 int id line3 0x7f0800ff
 int id linear 0x7f080100
-int id listCursos 0x7f080101
 int id listMode 0x7f080102
+int id listTravels 0x7f080202
 int id list_item 0x7f080103
 int id locale 0x7f080104
 int id lottie_layer_name 0x7f080105
@@ -3327,6 +3328,7 @@ int string appbar_scrolling_view_behavior 0x7f10001f
 int string bottom_sheet_behavior 0x7f100020
 int string bottomsheet_action_expand_halfway 0x7f100021
 int string btnAdd 0x7f100022
+int string btnBackCreateTravel 0x7f1000ad
 int string btnCreateAccount 0x7f100023
 int string btnCreateTravel 0x7f100024
 int string btnIniciar 0x7f100025

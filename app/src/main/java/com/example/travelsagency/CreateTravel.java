@@ -97,6 +97,7 @@ public class CreateTravel extends AppCompatActivity {
             }
         });
         cargarPreferencias();
+        Toast.makeText(this, "Recibimos: "+id_agencie_get, Toast.LENGTH_SHORT).show();
 
         btnCrateTravel.setOnClickListener(new View.OnClickListener() {
             @Override

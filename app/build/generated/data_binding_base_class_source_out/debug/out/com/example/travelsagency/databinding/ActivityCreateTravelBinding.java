@@ -22,6 +22,9 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnBackCreateTravel;
+
+  @NonNull
   public final Button btnCreateTravel;
 
   @NonNull
@@ -55,13 +58,14 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
   public final EditText edtxtStartTravel;
 
   private ActivityCreateTravelBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnCreateTravel, @NonNull EditText edtxtDescriptionTravel,
-      @NonNull Spinner edtxtDestinationTravel, @NonNull EditText edtxtEndTravel,
-      @NonNull EditText edtxtHourExitTravel, @NonNull EditText edtxtLocationArriveTravel,
-      @NonNull EditText edtxtLocationExitTravel, @NonNull EditText edtxtNameTravel,
-      @NonNull EditText edtxtPriceTravel, @NonNull EditText edtxtQuantityTravel,
-      @NonNull EditText edtxtStartTravel) {
+      @NonNull Button btnBackCreateTravel, @NonNull Button btnCreateTravel,
+      @NonNull EditText edtxtDescriptionTravel, @NonNull Spinner edtxtDestinationTravel,
+      @NonNull EditText edtxtEndTravel, @NonNull EditText edtxtHourExitTravel,
+      @NonNull EditText edtxtLocationArriveTravel, @NonNull EditText edtxtLocationExitTravel,
+      @NonNull EditText edtxtNameTravel, @NonNull EditText edtxtPriceTravel,
+      @NonNull EditText edtxtQuantityTravel, @NonNull EditText edtxtStartTravel) {
     this.rootView = rootView;
+    this.btnBackCreateTravel = btnBackCreateTravel;
     this.btnCreateTravel = btnCreateTravel;
     this.edtxtDescriptionTravel = edtxtDescriptionTravel;
     this.edtxtDestinationTravel = edtxtDestinationTravel;
@@ -102,6 +106,12 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnBackCreateTravel;
+      Button btnBackCreateTravel = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackCreateTravel == null) {
+        break missingId;
+      }
+
       id = R.id.btnCreateTravel;
       Button btnCreateTravel = ViewBindings.findChildViewById(rootView, id);
       if (btnCreateTravel == null) {
@@ -168,10 +178,10 @@ public final class ActivityCreateTravelBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityCreateTravelBinding((LinearLayout) rootView, btnCreateTravel,
-          edtxtDescriptionTravel, edtxtDestinationTravel, edtxtEndTravel, edtxtHourExitTravel,
-          edtxtLocationArriveTravel, edtxtLocationExitTravel, edtxtNameTravel, edtxtPriceTravel,
-          edtxtQuantityTravel, edtxtStartTravel);
+      return new ActivityCreateTravelBinding((LinearLayout) rootView, btnBackCreateTravel,
+          btnCreateTravel, edtxtDescriptionTravel, edtxtDestinationTravel, edtxtEndTravel,
+          edtxtHourExitTravel, edtxtLocationArriveTravel, edtxtLocationExitTravel, edtxtNameTravel,
+          edtxtPriceTravel, edtxtQuantityTravel, edtxtStartTravel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

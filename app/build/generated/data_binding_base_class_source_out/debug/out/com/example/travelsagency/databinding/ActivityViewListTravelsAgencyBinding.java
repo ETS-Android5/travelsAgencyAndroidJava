@@ -25,17 +25,17 @@ public final class ActivityViewListTravelsAgencyBinding implements ViewBinding {
   public final Button btnAddTravel;
 
   @NonNull
-  public final ListView listCursos;
+  public final ListView listTravels;
 
   @NonNull
   public final TextView titleListTravels;
 
   private ActivityViewListTravelsAgencyBinding(@NonNull LinearLayout rootView,
-      @NonNull Button btnAddTravel, @NonNull ListView listCursos,
+      @NonNull Button btnAddTravel, @NonNull ListView listTravels,
       @NonNull TextView titleListTravels) {
     this.rootView = rootView;
     this.btnAddTravel = btnAddTravel;
-    this.listCursos = listCursos;
+    this.listTravels = listTravels;
     this.titleListTravels = titleListTravels;
   }
 
@@ -72,9 +72,9 @@ public final class ActivityViewListTravelsAgencyBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.listCursos;
-      ListView listCursos = ViewBindings.findChildViewById(rootView, id);
-      if (listCursos == null) {
+      id = R.id.listTravels;
+      ListView listTravels = ViewBindings.findChildViewById(rootView, id);
+      if (listTravels == null) {
         break missingId;
       }
 
@@ -85,7 +85,7 @@ public final class ActivityViewListTravelsAgencyBinding implements ViewBinding {
       }
 
       return new ActivityViewListTravelsAgencyBinding((LinearLayout) rootView, btnAddTravel,
-          listCursos, titleListTravels);
+          listTravels, titleListTravels);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

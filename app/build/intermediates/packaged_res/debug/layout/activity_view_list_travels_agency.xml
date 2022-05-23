@@ -22,7 +22,7 @@
         />
 
     <ListView
-        android:id="@+id/listCursos"
+        android:id="@+id/listTravels"
         android:layout_width="match_parent"
         android:layout_height="1200px"
         android:background="@color/gray_soft"
