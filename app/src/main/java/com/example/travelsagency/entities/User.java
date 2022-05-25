@@ -2,9 +2,9 @@ package com.example.travelsagency.entities;
 
 public class User {
     private Integer id;
-    private String name, email, telephone, rfc, role, password;
+    private String name, email, telephone, rfc, role, password, created_at;
 
-    public User(Integer id, String name, String email, String telephone, String rfc, String role, String password) {
+    public User(Integer id, String name, String email, String telephone, String rfc, String role, String password, String created_at) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -12,6 +12,7 @@ public class User {
         this.rfc = rfc;
         this.role = role;
         this.password = password;
+        this.created_at = created_at;
     }
 
     public User() {
@@ -72,4 +73,8 @@ public class User {
     public void setRole(String role) {
         this.role = role;
     }
+
+    public String getCreated_at() { return created_at; }
+
+    public void setCreated_at(String created_at) { this.created_at = created_at; }
 }

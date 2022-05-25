@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".ShowTravelView"
+            android:exported="false" />
+        <activity
+            android:name=".ListTravelsUser"
+            android:exported="false" />
+        <activity
+            android:name=".AgencyEditTravel"
+            android:exported="false" />
+        <activity
+            android:name=".ViewListTravelsAgency"
+            android:exported="false" />
+        <activity
+            android:name=".CreateTravel"
+            android:exported="false" />
+        <activity
             android:name=".AgencyHome"
             android:exported="false" />
         <activity

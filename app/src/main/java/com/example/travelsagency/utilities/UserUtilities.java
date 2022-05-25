@@ -8,4 +8,5 @@ public class UserUtilities {
     public static final String TELEPHONE_FIELD = "telephone";
     public static final String ROLE_FIELD = "role";
     public static final String RFC_FIELD = "rfc";
+    public static final String CREATED_AT = "created_at";
 }
