@@ -30,7 +30,8 @@ import java.util.Date;
 import java.util.Random;
 
 public class CreateTravel extends AppCompatActivity {
-    EditText name_travel, description_travel, location_exit_travel, location_arrive_travel, date_start_travel, date_end_travel, time_exit_travel, seats_quantity_travel, price_travel;
+    EditText name_travel, description_travel, location_exit_travel, location_arrive_travel, date_start_travel,
+            date_end_travel, time_exit_travel, seats_quantity_travel, price_travel;
     Spinner destination_travel;
     Button btnCrateTravel;
     DatePickerDialog datePickerDialog;
@@ -116,7 +117,8 @@ public class CreateTravel extends AppCompatActivity {
                 String end_travel = date_end_travel.getText().toString();
                 String quantity = seats_quantity_travel.getText().toString();
                 String price = price_travel.getText().toString();
-                if (!name.isEmpty() && !description.isEmpty() && !location_exit.isEmpty()  && !location_arrive.isEmpty() && !start_travel.isEmpty() && !end_travel.isEmpty() && !quantity.isEmpty() && !price.isEmpty()){
+                if (!name.isEmpty() && !description.isEmpty() && !location_exit.isEmpty()  && !location_arrive.isEmpty() &&
+                        !start_travel.isEmpty() && !end_travel.isEmpty() && !quantity.isEmpty() && !price.isEmpty()){
                     if (!destination.equals("Destination")){
                         ContentValues register = new ContentValues();
                         //register.put(UserUtilities.ID_FIELD, Integer.toString(upperbound));

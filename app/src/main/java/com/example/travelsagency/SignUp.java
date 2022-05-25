@@ -42,15 +42,7 @@ public class SignUp extends AppCompatActivity{
         email = findViewById(R.id.edtxt_email);
         password = findViewById(R.id.edtxt_pwd);
         rfc = findViewById(R.id.edtxt_rfc);
-        //btn_sign_in = findViewById(R.id.btnLogin);
         btn_sign_up = findViewById(R.id.btnReg);
-        /*btn_sign_in.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SignUp.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });*/
         btn_sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -138,13 +130,12 @@ public class SignUp extends AppCompatActivity{
                         //mostramos el mensaje
                         toast.show();
                     }
-
                     //clean_data();
                     //Intent intent = new Intent(SignUp.this, UserHome.class);
                     //startActivity(intent);
                     Toast.makeText(SignUp.this, "Se agregó a " + user_name + " exitosamente", Toast.LENGTH_LONG).show();
                     if(radio_role.getText().toString().equals("Viajero")){
-                        startActivity(new Intent(SignUp.this, TravelerHome.class));
+                        startActivity(new Intent(SignUp.this, ListTravelsUser.class));
                     }else if (radio_role.getText().toString().equals("Agencia")){
                         startActivity(intent_list_travels);
                     }
@@ -158,10 +149,6 @@ public class SignUp extends AppCompatActivity{
                 Toast.makeText(SignUp.this, radio_role.getText(), Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    public void UserRegister(View view){
-
     }
 
     public long getTaskCount() {

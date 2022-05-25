@@ -103,7 +103,8 @@ public class ViewListTravelsAgency extends AppCompatActivity {
         SQLiteDatabase dbTravels = travels.getWritableDatabase();
         Travel travel = null;
         listaTravels = new ArrayList<Travel>();
-        fila=dbTravels.rawQuery("select name, destination, start_travel, end_travel, quantity, price, id from TRAVELS where agency_id_fk = '"+ id_agencie_login +"'",null);
+        fila=dbTravels.rawQuery("select name, destination, start_travel, end_travel, quantity, price, id " +
+                "from TRAVELS where agency_id_fk = '"+ id_agencie_login +"'",null);
         while (fila.moveToNext()){
             travel = new Travel();
             travel.setName(fila.getString(0));
@@ -121,7 +122,9 @@ public class ViewListTravelsAgency extends AppCompatActivity {
     private void getListTravels(){
         listaInformacion = new ArrayList<String>();
         for (int i = 0; i < listaTravels.size(); i++){
-            listaInformacion.add("\n"+listaTravels.get(i).getName()+ " - " + listaTravels.get(i).getDestination() + "\nStart: " +listaTravels.get(i).getStart_travel() + "         Ends: "+ listaTravels.get(i).getEnd_travel()+"\nSeats: "+listaTravels.get(i).getQuantity() + "         Price: "+listaTravels.get(i).getPrice() + "\n");
+            listaInformacion.add("\n"+listaTravels.get(i).getName()+ " - " + listaTravels.get(i).getDestination() + "\nStart: "
+                    +listaTravels.get(i).getStart_travel() + "         Ends: "+ listaTravels.get(i).getEnd_travel()+"\nSeats: "
+                    +listaTravels.get(i).getQuantity() + "         Price: "+listaTravels.get(i).getPrice() + "\n");
         }
     }
 }

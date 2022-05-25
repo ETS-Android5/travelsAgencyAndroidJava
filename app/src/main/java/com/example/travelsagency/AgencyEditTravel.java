@@ -26,7 +26,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class AgencyEditTravel extends AppCompatActivity {
-    EditText name_travel, description_travel, location_exit_travel, location_arrive_travel, date_start_travel, date_end_travel, time_exit_travel, seats_quantity_travel, price_travel;
+    EditText name_travel, description_travel, location_exit_travel, location_arrive_travel, date_start_travel,
+            date_end_travel, time_exit_travel, seats_quantity_travel, price_travel;
     Spinner destination_travel;
     Button btnUpdateTravel;
     DatePickerDialog datePickerDialog;
@@ -186,12 +187,13 @@ public class AgencyEditTravel extends AppCompatActivity {
     private  void consultTravel(String id){
         DatabaseHelper travel = new DatabaseHelper(AgencyEditTravel.this, "TravelsAgency.db", null, 1 );
         SQLiteDatabase db= travel.getWritableDatabase();
-        fila=db.rawQuery("select name, description, destination, location_exit, location_arrive,start_travel, hour_exit, end_travel, quantity, price from TRAVELS where id = '"+ id +"'",null);
+        fila=db.rawQuery("select name, description, destination, location_exit, location_arrive,start_travel, hour_exit, end_travel, " +
+                "quantity, price from TRAVELS where id = '"+ id +"'",null);
         /*Realizamos un try catch para captura de errores*/
         try {
             /*Condicional if preguntamos si cursor tiene algun dato*/
             if(fila.moveToFirst()){
-//capturamos los valores del cursos y lo almacenamos en variable
+                //capturamos los valores del cursos y lo almacenamos en variable
                 name = fila.getString(0);
                 description = fila.getString(1);
                 destination = fila.getString(2);
