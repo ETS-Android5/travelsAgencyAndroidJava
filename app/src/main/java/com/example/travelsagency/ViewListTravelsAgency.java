@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,6 +46,22 @@ public class ViewListTravelsAgency extends AppCompatActivity {
         consultTravels();
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInformacion);
         listViewTravels.setAdapter(adapter);
+        listViewTravels.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String id_travel = listaTravels.get(i).getId().toString();
+                /*Toast.makeText(ViewListTravelsAgency.this, "Has seleccionado el viaje con ID: "+id_travel, Toast.LENGTH_SHORT).show();*/
+
+                SharedPreferences preferences = getSharedPreferences("ID TRAVEL", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("id", id_travel);
+                editor.commit();
+
+                Intent editTravel = new Intent(ViewListTravelsAgency.this, AgencyEditTravel.class);
+                editTravel.putExtra("id", id_travel);
+                startActivity(editTravel);
+            }
+        });
 
         btnAddTravel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +74,7 @@ public class ViewListTravelsAgency extends AppCompatActivity {
                     id_agencie_send = id_agencie_login;
                 }
                 SharedPreferences.Editor editor = preferences.edit();
-                Toast.makeText(ViewListTravelsAgency.this, "Enviamos: "+id_agencie_send, Toast.LENGTH_SHORT).show();
+                /*Toast.makeText(ViewListTravelsAgency.this, "Enviamos: "+id_agencie_send, Toast.LENGTH_SHORT).show();*/
                 editor.putString("id", id_agencie_send);
                 editor.commit();
                 Intent intent_create_travels = new Intent(ViewListTravelsAgency.this, CreateTravel.class);
@@ -86,7 +103,7 @@ public class ViewListTravelsAgency extends AppCompatActivity {
         SQLiteDatabase dbTravels = travels.getWritableDatabase();
         Travel travel = null;
         listaTravels = new ArrayList<Travel>();
-        fila=dbTravels.rawQuery("select name, destination, start_travel, end_travel, quantity, price from TRAVELS where agency_id_fk = '"+ id_agencie_login +"'",null);
+        fila=dbTravels.rawQuery("select name, destination, start_travel, end_travel, quantity, price, id from TRAVELS where agency_id_fk = '"+ id_agencie_login +"'",null);
         while (fila.moveToNext()){
             travel = new Travel();
             travel.setName(fila.getString(0));
@@ -95,6 +112,7 @@ public class ViewListTravelsAgency extends AppCompatActivity {
             travel.setEnd_travel(fila.getString(3));
             travel.setQuantity(fila.getInt(4));
             travel.setPrice(fila.getFloat(5));
+            travel.setId(fila.getInt(6));
             listaTravels.add(travel);
         }
         getListTravels();

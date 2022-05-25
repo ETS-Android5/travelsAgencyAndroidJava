@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.travelsagency.app-merged_res-38:/layout_activity_agency_edit_travel.xml.flat",
+        "source": "com.example.travelsagency.app-main-40:/layout/activity_agency_edit_travel.xml"
+    },
+    {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-merged_res-38:\\drawable_background_gradient.xml.flat",
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\drawable\\background_gradient.xml"
     },
@@ -52,8 +56,8 @@
         "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\drawable\\edit_text_states.xml"
     },
     {
-        "merged": "com.example.travelsagency.app-merged_res-38:/layout_activity_create_travel.xml.flat",
-        "source": "com.example.travelsagency.app-main-40:/layout/activity_create_travel.xml"
+        "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-merged_res-38:\\layout_activity_agency_edit_travel.xml.flat",
+        "source": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-main-40:\\layout\\activity_agency_edit_travel.xml"
     },
     {
         "merged": "C:\\Users\\cesar\\.gradle\\daemon\\7.3.3\\com.example.travelsagency.app-merged_res-38:\\layout_activity_agency_home.xml.flat",

@@ -40,4 +40,7 @@
     <string name="edtxt_quantity_travel">Seats Quantity</string>
     <string name="edtxt_price_travel">Price</string>
     <string name="btnCreateTravel">CREATE TRAVEL</string>
+    <string name="editTravel">Edit Travel</string>
+    <string name="btnUpdateTravel">UPDATE TRAVEL</string>
+    <string name="subtitle_list_travels">Seleccione un viaje para editarlo</string>
 </resources>

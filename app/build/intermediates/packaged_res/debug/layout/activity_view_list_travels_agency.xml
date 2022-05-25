@@ -21,6 +21,20 @@
         android:layout_marginBottom="20dp"
         />
 
+    <TextView
+        android:id="@+id/subtitle_list_travels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitle_list_travels"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        />
+
     <ListView
         android:id="@+id/listTravels"
         android:layout_width="match_parent"

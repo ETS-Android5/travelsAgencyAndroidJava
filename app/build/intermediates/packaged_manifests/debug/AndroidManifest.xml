@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Design.NoActionBar" >
         <activity
+            android:name="com.example.travelsagency.AgencyEditTravel"
+            android:exported="false" />
+        <activity
             android:name="com.example.travelsagency.ViewListTravelsAgency"
             android:exported="false" />
         <activity

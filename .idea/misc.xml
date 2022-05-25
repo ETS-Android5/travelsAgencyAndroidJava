@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/drawable/edit_button.xml" value="0.267" />
+        <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_agency_edit_travel.xml" value="0.3625" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_agency_home.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_create_travel.xml" value="0.33055555555555555" />
         <entry key="..\:/Users/cesar/Documents/01_IA/travelsAgencyAndroidJava/app/src/main/res/layout/activity_main.xml" value="0.34444444444444444" />

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                             editor.commit();
                             Intent intent = new Intent(MainActivity.this, ViewListTravelsAgency.class);
                             intent.putExtra("id_agencie",id);
-                            Toast.makeText(MainActivity.this, "Hemos enviado "+id, Toast.LENGTH_SHORT).show();
+                            /*Toast.makeText(MainActivity.this, "Hemos enviado "+id, Toast.LENGTH_SHORT).show();*/
                             startActivity(intent);
                             
                             //Toast.makeText(MainActivity.this, "email: "+ usua + " pass: " + pass + "role: " + role, Toast.LENGTH_SHORT).show();
